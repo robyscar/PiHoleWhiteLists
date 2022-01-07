@@ -61,44 +61,6 @@ pihole -w geo-prod.do.dsp.mp.microsoft.com
 pihole -w displaycatalog.mp.microsoft.com
 ```
 
-### XBox Live
-
-This domain is used for sign-ins, creating new accounts and recovering existing Microsoft Accounts *(Confirmed by Microsoft)*.
-```
-pihole -w clientconfig.passport.net
-```
-
-This domain is used for Xbox Live Achievements (confirmed by Microsoft)
-
-```
-pihole -w v10.events.data.microsoft.com
-```
-
-There are several domains discovered initially on [Reddit](https://discourse.pi-hole.net/clicks/track?url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fxboxone%2Fcomments%2F5khrrl%2Fachievements_not_unlocking%2F&post_id=628&topic_id=212) and [/r/xboxone](https://discourse.pi-hole.net/clicks/track?url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fxboxone%2Fcomments%2F5l7bm1%2Ftech_piholeother_dns_users_additional_whitelist%2F&post_id=628&topic_id=212), which were also confirmed by Microsoft as being required by Xbox Live for full functionality.
-
-```
-pihole -w xbox.ipv6.microsoft.com
-pihole -w device.auth.xboxlive.com
-pihole -w www.msftncsi.com
-pihole -w title.mgt.xboxlive.com
-pihole -w xsts.auth.xboxlive.com
-pihole -w title.auth.xboxlive.com
-pihole -w ctldl.windowsupdate.com
-pihole -w attestation.xboxlive.com
-pihole -w xboxexperiencesprod.experimentation.xboxlive.com
-pihole -w xflight.xboxlive.com
-pihole -w cert.mgt.xboxlive.com
-pihole -w xkms.xbolive.com
-pihole -w def-vef.xboxlive.com
-pihole -w notify.xboxlive.com
-pihole -w help.ui.xboxlive.com
-pihole -w licensing.xboxlive.com
-pihole -w eds.xboxlive.com
-pihole -w www.xboxlive.com
-pihole -w v10.vortex-win.data.microsoft.com
-pihole -w settings-win.data.microsoft.com
-```
-
 ### Skype
 
 ```
